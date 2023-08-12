@@ -39,4 +39,6 @@ const saveFile = (event) => {
     link.click();
 
     window.URL.revokeObjectURL(blob);
+
+    event.target.reset();
 };
