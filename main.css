@@ -1,0 +1,129 @@
+/* Global */
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+.pagewrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+.container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 0.5rem;
+    margin: auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row > div {
+    flex: 1;
+}
+header {
+    background-color: #663399;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+main {
+    padding: 1.5rem 0;
+}
+footer {
+    margin-top: auto;
+    background-color: #232323;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+/* Form */
+form {
+    display: block;
+}
+.form-info {
+    font-weight: 600;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+    padding: 0 0.25rem;
+}
+.form-group span {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.form-actions button {
+    margin: 0 0.25rem;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+input,
+input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    background-color: #663399;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+button:hover {
+    opacity: 0.9;
+}

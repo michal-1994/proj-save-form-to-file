@@ -1,15 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj save form to file</title>
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <link rel="stylesheet" href="main.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proj save form to file</title>
+        <link rel="icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="pagewrapper">
+            <header>
+                <h1>Awesome Form</h1>
+            </header>
+            <main>
+                <div class="container">
+                    <form>
+                        <p class="form-info">Form Fields</p>
 
-    <script src="main.js"></script>
-</body>
+                        <!-- First Name -->
+                        <div class="form-group">
+                            <label for="firstname"> First Name </label>
+                            <input
+                                id="firstname"
+                                class="form-control"
+                                type="text"
+                                placeholder="First Name"
+                                data-type="simple"
+                            />
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="form-group">
+                            <label for="lastname"> Last Name </label>
+                            <input
+                                id="lastname"
+                                class="form-control"
+                                type="text"
+                                placeholder="Last Name"
+                                data-type="simple"
+                            />
+                        </div>
+
+                        <!-- Sex -->
+                        <div class="form-group">
+                            <label for="sex"> Sex </label>
+                            <select
+                                id="sex"
+                                class="form-select"
+                                name="sex"
+                                data-type="simple"
+                            >
+                                <option value="Others">Others</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <!-- Age -->
+                        <div class="form-group">
+                            <label for="age"> Age </label>
+                            <input
+                                id="age"
+                                class="form-control"
+                                type="number"
+                                placeholder="Age"
+                                data-type="simple"
+                            />
+                        </div>
+
+                        <!-- Choose your favorite season -->
+                        <div
+                            class="form-group"
+                            data-name="Your favorite season"
+                        >
+                            <p>Choose your favorite season</p>
+                            <div>
+                                <input
+                                    id="season-spring"
+                                    type="radio"
+                                    name="favorite-season"
+                                    value="Spring"
+                                    data-type="single"
+                                />
+                                <label for="season-spring"> Spring </label>
+                            </div>
+                            <div>
+                                <input
+                                    id="season-summer"
+                                    type="radio"
+                                    name="favorite-season"
+                                    value="Summer"
+                                    data-type="single"
+                                />
+                                <label for="season-summer"> Summer </label>
+                            </div>
+                            <div>
+                                <input
+                                    id="season-autumn"
+                                    type="radio"
+                                    name="favorite-season"
+                                    value="Autumn"
+                                    data-type="single"
+                                />
+                                <label for="season-autumn"> Autumn </label>
+                            </div>
+                            <div>
+                                <input
+                                    id="season-winter"
+                                    type="radio"
+                                    name="favorite-season"
+                                    value="Winter"
+                                    data-type="single"
+                                />
+                                <label for="season-winter"> Winter </label>
+                            </div>
+                        </div>
+
+                        <!-- Privacy policy required -->
+                        <div class="form-group">
+                            <input
+                                id="privacy-policy"
+                                type="checkbox"
+                                name="privacy-policy"
+                                value="Privacy policy"
+                                data-type="policy"
+                                required
+                            />
+                            <label for="privacy-policy"> Privacy policy </label>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam ac egestas tortor. Morbi
+                                interdum sem id velit elementum pellentesque.
+                                Duis condimentum lacus tempor orci faucibus
+                                eleifend. Cras sodales lectus mi, et dapibus
+                                augue maximus ut. Fusce sit amet elit vel sapien
+                                congue posuere eu vel metus.
+                            </span>
+                        </div>
+
+                        <!-- File configuration -->
+                        <p class="form-info">File configuration</p>
+
+                        <div class="row">
+                            <!-- Filename required -->
+                            <div class="form-group">
+                                <label for="filename"> File name </label>
+                                <input
+                                    id="filename"
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="File name"
+                                    required
+                                />
+                            </div>
+                            <!-- Filetype required -->
+                            <div class="form-group">
+                                <label for="filetype">
+                                    Choose a file type
+                                </label>
+                                <select
+                                    id="filetype"
+                                    class="form-select"
+                                    name="filetype"
+                                    required
+                                >
+                                    <option value="txt">Txt</option>
+                                    <option value="rtf">Rtf</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; form</p>
+            </footer>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
 </html>
