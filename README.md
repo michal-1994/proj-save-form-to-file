@@ -1,7 +1,7 @@
 # <div align="center">Save Form To File</div>
 
 <div align="center">
-  <img src="/favicon.png" alt="Ico" title="Ico" style="height: 100px;">
+  <img src="/favicon.png" alt="Ico" title="Ico" style="height: 40px;">
 </div>
 
 ## Introdution
